@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joke Generator</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">JokeGen</div>
+        <nav>
+            <a href="#home" class="active">Home</a>
+            <a href="#jokes">Jokes</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h1>Welcome to JokeGen!</h1>
+            <p>Your daily dose of laughter is just a click away.</p>
+            <button id="get-started-btn">Start Laughing</button>
+        </section>
+
+        <section id="jokes" class="hidden">
+            <div class="joke-box">
+                <h2>Here's a Joke for You:</h2>
+                <p id="joke-text">Click the button to get a random joke!</p>
+                <div class="joke-controls">
+                    <button id="joke-btn">Get Joke</button>
+                    <select id="category-select">
+                        <option value="Any">Any</option>
+                        <option value="Programming">Programming</option>
+                        <option value="Miscellaneous">Miscellaneous</option>
+                        <option value="Dark">Dark</option>
+                        <option value="Pun">Pun</option>
+                        <option value="Spooky">Spooky</option>
+                        <option value="Christmas">Christmas</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 JokeGen. Laugh more, live better.</p>
+    </footer>
+
+    <script src="Script.js" defer></script>
+</body>
+</html>
